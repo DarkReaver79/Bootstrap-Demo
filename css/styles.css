@@ -10,14 +10,52 @@ h1{
     line-height: 1.5;
 }
 
+h2{
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h3{
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+p{
+    color: #8f8f8f;
+}
+
 /* ========== Classes ========== */
 
+.carousel-item{
+    padding: 5% 15%;
+}
+
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 5% 15%;
 }
 
 .download-button{
     margin: 5% 3% 5% 0%;
+}
+
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #ff4c68;
+}
+
+.press-logo{
+    padding-top: 10%;
+    width: 75%;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+    text-align: center;
 }
 
 .navbar{
@@ -40,26 +78,77 @@ h1{
     font-weight: 300;
 }
 
+.soc-media-icons i{
+    color: #8f8f8f;
+    padding-bottom: 20px;
+    padding-right: 15px;
+}
+
+.testimonial-image{
+    border-radius: 50%;
+    margin: 20px;
+    width: 10%;
+}
+
 .title-image{
-    position: relative;
-    left: 25%;
-    transform: rotate(15deg);
-    width: 50%;
+    position: absolute;
+    right: 30%;
+    transform: rotate(25deg);
+    width: 60%;
 }
 
 /* ========== IDs ========== */
 
-#features{
+#cta{
+    background-color: #ff4c68;
+    color: white;
+    padding-top: 50px;
     text-align: center;
 }
 
-#features-circle, #features-bullseye, #features-heart{
-    color: #ff4c68;
-    font-size: 300%;
-    line-height: 1.5;
+#features{
+    background-color: white;
+    padding: 5% 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+#footer{
+    padding-top: 50px;
+    text-align: center;
+}
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+}
+
+#pricing{
+    padding: 100px;;
+}
+
+#testimonials{
+    background-color: #ef8172;
+    color: white;
+    text-align: center;
 }
 
 #title{
     color: white;
     background-color: #ff4c68;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media (max-width: 1028px){
+
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        position: static;
+        transform: rotate(0deg);
+    }
 }

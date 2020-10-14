@@ -152,4 +152,8 @@ p{
         position: static;
         transform: rotate(0deg);
     }
+
+    .press-logo{
+        padding-bottom: 50px;
+    }
 }

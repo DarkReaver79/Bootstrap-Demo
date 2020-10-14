@@ -1,23 +1,11 @@
 /* ========== Elements ========== */
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
-h1{
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.5;
-}
-
-h2{
-    font-family: "Montserrat";
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-h3{
-    font-family: "Montserrat";
+h1, h2, h3, h4, h5, h6{
     font-weight: bold;
 }
 
@@ -25,14 +13,20 @@ p{
     color: #8f8f8f;
 }
 
-/* ========== Classes ========== */
+/* ========== GENERAL CLASSES ========== */
 
-.carousel-item{
-    padding: 5% 15%;
+.big-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.colored-section{
+    background-color: #ff4c68;
+    color: white;
 }
 
 .container-fluid{
-    padding: 3% 15% 5% 15%;
+    padding: 7% 15%;
 }
 
 .download-button{
@@ -46,16 +40,6 @@ p{
 
 .icon:hover{
     color: #ff4c68;
-}
-
-.press-logo{
-    padding-top: 10%;
-    width: 75%;
-}
-
-.pricing-column{
-    padding: 3% 2%;
-    text-align: center;
 }
 
 .navbar{
@@ -73,22 +57,20 @@ p{
 }
 
 .nav-link{
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
 }
 
-.soc-media-icons i{
-    color: #8f8f8f;
-    padding-bottom: 20px;
-    padding-right: 15px;
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
-.testimonial-image{
-    border-radius: 50%;
-    margin: 20px;
-    width: 10%;
+.white-section{
+    background-color: white;
 }
+
+/* ========== TITLE SECTION ========== */
 
 .title-image{
     position: absolute;
@@ -97,53 +79,72 @@ p{
     width: 60%;
 }
 
-/* ========== IDs ========== */
+#title .container-fluid{
+    padding: 3% 15% 7%;
+    text-align: left;
+}
 
-#cta{
-    background-color: #ff4c68;
-    color: white;
-    padding-top: 50px;
-    text-align: center;
+/* ========== FEATURES SECTION ========== */
+
+.feature-title{
+    font-size: 1.5rem;
 }
 
 #features{
-    background-color: white;
-    padding: 5% 0;
     position: relative;
-    text-align: center;
     z-index: 1;
 }
 
-#footer{
-    padding-top: 50px;
-    text-align: center;
+/* ========== TESTIMONIALS SECTION ========== */
+
+.testimonial-image{
+    border-radius: 50%;
+    margin: 20px;
+    width: 10%;
 }
 
-#press{
-    background-color: #ef8172;
-    text-align: center;
-}
-
-#pricing{
-    padding: 100px;;
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 #testimonials{
     background-color: #ef8172;
-    color: white;
-    text-align: center;
 }
 
-#title{
-    color: white;
-    background-color: #ff4c68;
+/* ========== PRESS SECTION ========== */
+
+.press-logo{
+    width: 75%;
+}
+
+#press{
+    background-color: #ef8172;
+}
+
+/* ========== PRICING SECTION ========== */
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+.pricing-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* ========== FOOTER SECTION ========== */
+
+.soc-media-icon{
+    color: #8f8f8f;
+    margin: 20px 10px;
 }
 
 /* ========== MEDIA QUERIES ========== */
 
 @media (max-width: 1028px){
 
-    #title{
+    #title .container-fluid {
         text-align: center;
     }
 
